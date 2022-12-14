@@ -10,7 +10,7 @@ class Pet extends Model
     use HasFactory;
 
     public function owner(){
-        return $this->belongsTo(Category::class); //Pet pripada samo jednom Owner-u
+        return $this->belongsTo(Owner::class); //Pet pripada samo jednom Owner-u
     }
     public function neklaces(){
         return $this->hasMany(Neklace::class);//Pet ima vise Nekclaces

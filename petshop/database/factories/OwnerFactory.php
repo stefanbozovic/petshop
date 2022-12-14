@@ -21,7 +21,8 @@ class OwnerFactory extends Factory
             'ime' => $this->faker->firstname(),
             'prezime' => $this->faker->lastname(),
             'email' => $this->faker->email(),
-            
+            'sifra' => Str::random(8),
+            'remember_token' => Str::random(10),
         ];
     }
 }

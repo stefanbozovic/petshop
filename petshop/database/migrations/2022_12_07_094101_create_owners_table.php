@@ -18,6 +18,8 @@ class CreateOwnersTable extends Migration
             $table->string('ime');
             $table->string('prezime');
             $table->string('email')->unique();
+            $table->string('sifra');
+            $table->rememberToken();
             $table->string('updated_at');
             $table->string('created_at');
         });
